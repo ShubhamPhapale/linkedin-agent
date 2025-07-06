@@ -40,7 +40,7 @@ def lookup(name_and_info: str) -> str:
         agent=agent,
         tools=tools_for_agent,
         verbose=True,
-        handle_parsing_errors=True,
+        handle_parsing_errors=True
     )
 
     result = agent_executor.invoke(
@@ -52,5 +52,5 @@ def lookup(name_and_info: str) -> str:
     return linkedin_profile_url
 
 if __name__ == "__main__":
-    linkedin_url = lookup(name_and_info="Shubham Phapale VNIT Nagpur")
+    linkedin_url = lookup(name_and_info="Shubham Phapale NIT Nagpur")
     print(linkedin_url)
